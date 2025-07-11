@@ -61,13 +61,7 @@ Open your browser at: [http://localhost:8501](http://localhost:8501)
 └── README.md              # Project documentation
 ```
 
----
 
-## 📊 Sample Screenshot
-
-![Sales Forecasting UI](https://github.com/shoaib1-coder/sales-forecasting-app/raw/main/screenshot.png)
-
----
 
 ## 👨‍💻 Author
 
