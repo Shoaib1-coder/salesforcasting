@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sales Forecasting App</title>
+    <link rel="stylesheet" href="/static/style.css">
+    
+</head>
+<body>
+
+<div class="container">
+    <h1>📈 Sales Forecasting App</h1>
+
+    <form method="post" class="form-inline">
+        <label for="periods">Forecast Months:</label>
+        <input type="number" id="periods" name="periods" min="1" value="{{ periods }}">
+        <button type="submit">Forecast</button>
+    </form>
+
+    <h2>Forecast Plot</h2>
+    <div>
+        {{ fig_html | safe }}
+    </div>
+
+    <h2>Forecast Table</h2>
+    <div class="table-container">
+        {{ forecast_table | safe }}
+    </div>
+   
+
+
+    <h2>Original Store Data (Last 20 Rows)</h2>
+    <div class="table-container">
+        {{ store_data | safe }}
+    </div>
+    
+
+
+   <h2>📊 Sales Forecasting App: Uses & Benefits</h2>
+
+    <div class="uses-benefits">
+        <h3>✅ Key Uses</h3>
+        <ul>
+            <li><strong>Predict Future Sales:</strong> Estimate upcoming sales for the next weeks, months, or quarters based on historical data.</li>
+            <li><strong>Inventory Planning:</strong> Prevent overstocking or stockouts by forecasting product demand.</li>
+            <li><strong>Financial Planning:</strong> Help budgeting and cash flow projections by aligning sales forecasts with expected revenue.</li>
+            <li><strong>Marketing Strategy:</strong> Plan promotions and campaigns during predicted low sales periods or capitalize on expected peaks.</li>
+            <li><strong>Resource Allocation:</strong> Adjust staffing, warehousing, and logistics according to forecasted workload.</li>
+            <li><strong>Business Expansion:</strong> Make data-driven decisions about opening new stores, launching products, or entering new markets.</li>
+        </ul>
+
+        <h3>🎯 Key Benefits</h3>
+        <table class="benefits-table">
+            <thead>
+                <tr><th>Benefit</th><th>Description</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>📈 Improved Decision-Making</td><td>Backed by data, managers can make more accurate, confident choices.</td></tr>
+                <tr><td>💸 Cost Efficiency</td><td>Reduces waste in inventory, staffing, and marketing.</td></tr>
+                <tr><td>⏱️ Time-Saving</td><td>Automates forecasting that would otherwise be manual or spreadsheet-based.</td></tr>
+                <tr><td>🔍 Trend Detection</td><td>Reveals seasonal trends and growth patterns over time.</td></tr>
+                <tr><td>🔧 Customizable</td><td>Can include custom factors (e.g., quarterly seasonality, promotions).</td></tr>
+                <tr><td>📉 Risk Mitigation</td><td>Helps identify potential sales declines early and plan accordingly.</td></tr>
+            </tbody>
+        </table>
+
+        <h3>🛠️ Who Uses It?</h3>
+        <ul>
+            <li>Retailers (e.g., clothing, electronics)</li>
+            <li>E-commerce Platforms</li>
+            <li>Manufacturers</li>
+            <li>Distributors</li>
+            <li>Financial Analysts</li>
+            <li>Startup Founders and SMBs</li>
+        </ul>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
